@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'uti_puti.apps.MainConfig'
+    'uti_puti.apps.UtiPutiConfig'
 ]
 
 MIDDLEWARE = [
