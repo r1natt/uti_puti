@@ -1,3 +1,5 @@
 env/
 __pycache__
-courses/main/migrations
+main/uti_puti/migrations
+main/uti_puti/static/images
+main/uti_puti/static/video
