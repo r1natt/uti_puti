@@ -11,3 +11,7 @@ class Course(models.Model):
     pic_name = models.CharField(max_length=100)
     video_name = models.CharField(max_length=100)
     courses_group = models.ForeignKey(CoursesGroup, related_name='courses', on_delete=models.CASCADE, null=True)
+
+class View(models.Model):
+    user = models.ForeignKey(User, related_name='user_views', on_delete=models.DO_NOTHING)
+    course = models.ForeignKey(Course, related_name='course', on_delete=models.DO_NOTHING)
