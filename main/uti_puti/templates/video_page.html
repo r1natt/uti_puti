@@ -18,9 +18,14 @@
 	
 	<div id="ivwip3" class="gjs-grid-row">
 		<div id="i65y6o" class="gjs-grid-column">
-			<div id="i7guei">Гелевые типсы</div><video allowfullscreen="allowfullscreen" id="izl4gj" src="img/video2.webm"
-				controls></video>
-			<div id="i3nwdb">Описание видео</div><button type="button" id="iqjon8">Отметить просмотренным</button>
+			<div id="i7guei">{{ course.name }}</div>
+			<video allowfullscreen="allowfullscreen" id="izl4gj" src="/uti_puti/static/videos/{{ course.id }}.mp4" controls></video>
+			<div id="i3nwdb">{{ course.desc }}</div>
+			<form action="" method="post">
+				{% csrf_token %}
+				<button type="submit" id="iqjon8">Отметить просмотренным</button>
+			</form>
+			
 		</div>
 	</div>
 

@@ -211,6 +211,10 @@ body {
 	margin-bottom: 10px;
 	text-align: center;
 	color: rgba(189, 131, 237, 1);
+	border-top-color: rgba(189, 131, 237, 1);
+	border-right-color: rgba(189, 131, 237, 1);
+	border-bottom-color: rgba(189, 131, 237, 1);
+	border-left-color: rgba(189, 131, 237, 1);
 }
 
 #i5k4nf {
@@ -281,10 +285,10 @@ body {
 	border-right-width: 3px;
 	border-bottom-width: 3px;
 	border-left-width: 3px;
-	border-top-color: rgb(36, 99, 235);
-	border-right-color: rgb(36, 99, 235);
-	border-bottom-color: rgb(36, 99, 235);
-	border-left-color: rgb(36, 99, 235);
+	border-top-color: rgba(189, 131, 237, 1);
+	border-right-color: rgba(189, 131, 237, 1);
+	border-bottom-color: rgba(189, 131, 237, 1);
+	border-left-color: rgba(189, 131, 237, 1);
 	border-top-style: solid;
 	border-right-style: solid;
 	border-bottom-style: solid;
@@ -323,7 +327,7 @@ body {
 	padding-right: 15px;
 	padding-bottom: 10px;
 	padding-left: 15px;
-	background-color: rgb(36, 99, 235);
+	background-color: rgba(189, 131, 237, 1);
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
@@ -434,10 +438,10 @@ body {
 	border-right-style: solid;
 	border-bottom-style: solid;
 	border-left-style: solid;
-	border-top-color: rgb(36, 99, 235);
-	border-right-color: rgb(36, 99, 235);
-	border-bottom-color: rgb(36, 99, 235);
-	border-left-color: rgb(36, 99, 235);
+	border-top-color: rgba(189, 131, 237, 1);
+	border-right-color: rgba(189, 131, 237, 1);
+	border-bottom-color: rgba(189, 131, 237, 1);
+	border-left-color: rgba(189, 131, 237, 1);
 }
 
 #i2wo9e {
@@ -493,10 +497,10 @@ body {
 	border-right-style: solid;
 	border-bottom-style: solid;
 	border-left-style: solid;
-	border-top-color: rgb(36, 99, 235);
-	border-right-color: rgb(36, 99, 235);
-	border-bottom-color: rgb(36, 99, 235);
-	border-left-color: rgb(36, 99, 235);
+	border-top-color: rgba(189, 131, 237, 1);
+	border-right-color: rgba(189, 131, 237, 1);
+	border-bottom-color: rgba(189, 131, 237, 1);
+	border-left-color: rgba(189, 131, 237, 1);
 	height: 75px;
 }
 

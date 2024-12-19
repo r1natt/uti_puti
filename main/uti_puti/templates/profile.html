@@ -1,0 +1,81 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>profile (Copy)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="generator" content="GrapesJS Studio">
+  <link rel="stylesheet" href="{% static 'profile.css' %}">
+</head>
+
+<body id="i39khv">
+
+  {% include "header.html" %}
+
+  <div class="gjs-grid-row" id="i7ou0x">
+    <div class="gjs-grid-column" id="izcwev">
+      <button type="button" id="ion4i1" onclick="window.location='{{ '/logout' }}';">Выйти</button>
+      <img id="iisecf" src="{% static 'images/gichi_flip_flop.png' %}"/>
+      <div id="ivlq93">Привет, {{ user.username }}!</div>
+      
+      {% if courses_dims|length == 0 %}
+      <div id="i2r8jv">У тебя пока нет просмотренных уроков</div>
+      {% endif %}
+      {% if courses_dims|length != 0 %}
+
+      <div id="i2r8jv">Вот твои просмотренные уроки</div>
+      
+      {% for dim in courses_dims %}
+      <!-- <div id="i44jfn">Аппаратный маникюр</div> -->
+      <div class="gjs-grid-row" id="i29oa2">
+        <div class="gjs-grid-column" id="ismtxq"><img src="/uti_puti/static/images/previews/{{ dim.0.course.pic_name }}.jpg" id="ie6f77"/>
+          <h1 class="gjs-heading" id="ifxtvz">{{ dim.0.course.name }}</h1>
+          <a class="gjs-button" id="i6nvti" href="/courses/{{ dim.0.course.id }}">Перейти к курсу</a>
+        </div>
+
+        {% if dim.1 != None %}
+				<div class="gjs-grid-column" id="il17cf"><img src="/uti_puti/static/images/previews/{{ dim.1.course.pic_name }}.jpg" id="ipk5vg"/>
+          <h1 class="gjs-heading" id="iinwoy">{{ dim.1.course.name }}</h1>
+          <a class="gjs-button" id="ifbsxe" href="/courses/{{ dim.1.course.id }}">Перейти к курсу</a>
+        </div>
+				{% endif %}
+				{% if dim.1 == None %}
+				<div class="gjs-grid-column" id="ipfgs5"></div>
+				{% endif %}
+        
+        {% if dim.2 != None %}
+				<div class="gjs-grid-column" id="ibwiou"><img src="/uti_puti/static/images/previews/{{ dim.2.course.pic_name }}.jpg" id="i5l0ia"/>
+          <h1 class="gjs-heading" id="i85raj">{{ dim.2.course.name }}</h1>
+          <a class="gjs-button" id="i0uchw" href="/courses/{{ dim.2.course.id }}">Перейти к курсу</a>
+        </div>
+				{% endif %}
+				{% if dim.2 == None %}
+				<div class="gjs-grid-column" id="i27dio"></div>
+				{% endif %}
+
+        {% if dim.3 != None %}
+				<div class="gjs-grid-column" id="i4s1tj"><img src="/uti_puti/static/images/previews/{{ dim.3.course.pic_name }}.jpg" id="itgafm"/>
+          <h1 class="gjs-heading" id="iubv0d">{{ dim.3.course.name }}</h1>
+          <a class="gjs-button" id="irfrh1" href="/courses/{{ dim.3.course.id }}">Перейти к курсу</a>
+        </div>
+				{% endif %}
+				{% if dim.3 == None %}
+				<div class="gjs-grid-column" id="il9ifl"></div>
+				{% endif %}
+        
+      </div>
+      {% endfor %}
+      
+      {% endif %}
+    </div>
+  </div>
+
+  {% include "footer.html" %}
+
+</body>
+
+</html>

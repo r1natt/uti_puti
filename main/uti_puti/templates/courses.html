@@ -4,74 +4,67 @@
 <html>
 
 <head>
-  <title>courses</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="robots" content="index,follow">
-  <meta name="generator" content="GrapesJS Studio">
+	<title>courses</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="robots" content="index,follow">
+	<meta name="generator" content="GrapesJS Studio">
 	<link rel="stylesheet" href="{% static 'courses.css' %}">
 </head>
 
 <body id="isq60w">
-  
+	
 	{% include "header.html" %}
 
-  <div id="i0a14h" class="gjs-grid-row">
-    <div id="iawajf" class="gjs-grid-column">
+	<div id="i0a14h" class="gjs-grid-row">
+		<div id="iawajf" class="gjs-grid-column">
 
-			{% for course_group in courses_group %}
+			{% for name, values in data.items %}
 
-      <div id="iqhhad">{{ course_group.name }}</div>
+			<div id="iqhhad">{{ name }}</div>
 
-			{% for course in course_group.courses.all %}
-
+			{% for threes in values %}
 			<div id="i12m0a" class="gjs-grid-row">
 
-        <div id="irkfhs" class="gjs-grid-column"><img id="inygck" src="assets/tkjvwdqpias_hd.jpg"/>
-          <h1 id="iy0tlu" class="gjs-heading">Гелевые типсы</h1>
-          <div id="i3fs2t" class="text-main-content">Новый тренд — наращивание на гелевые типсы. Это очень быстро! Как
-            правильно сделать коррекцию на гелевые типсы покажу в этом видео весь процесс на себе. Сделаем растяжку
-            омбре.<br/>
-					</div><a id="ipy5y9" class="gjs-button">Приступить к уроку</a>
-        </div>
+				<div id="irkfhs" class="gjs-grid-column">
+					<img id="inygck" src="/uti_puti/static/images/previews/{{ threes.0.pic_name }}.jpg"/>
+					<h1 id="iy0tlu" class="gjs-heading">{{ threes.0.name }}</h1>
+					<div id="i3fs2t" class="text-main-content">{{ threes.0.desc }}<br/>
+					</div><a id="ipy5y9" class="gjs-button" href="{{ threes.0.id }}">Приступить к уроку</a>
+				</div>
 
-        <div id="iuagij" class="gjs-grid-column"><img src="assets/tkjvwdqpias_hd.jpg" id="i46ato"/>
-          <h1 id="ifw0sl" class="gjs-heading">Гелевые типсы</h1>
-          <div id="izwshx" class="text-main-content">Новый тренд — наращивание на гелевые типсы. Это очень быстро! Как
-            правильно сделать коррекцию на гелевые типсы покажу в этом видео весь процесс на себе. Сделаем растяжку
-            омбре.<br/>
-					</div><a id="ix0xyv" class="gjs-button">Приступить к уроку</a>
-        </div>
+				{% if threes.1 != None %}
+				<div id="irkfhs" class="gjs-grid-column">
+					<img id="inygck" src="/uti_puti/static/images/previews/{{ threes.1.pic_name }}.jpg"/>
+					<h1 id="iy0tlu" class="gjs-heading">{{ threes.1.name }}</h1>
+					<div id="i3fs2t" class="text-main-content">{{ threes.1.desc }}<br/>
+					</div><a id="ipy5y9" class="gjs-button" href="{{ threes.1.id }}">Приступить к уроку</a>
+				</div>
+				{% endif %}
+				{% if threes.1 == None %}
+				<div id="ilj9f4" class="gjs-grid-column"></div>
+				{% endif %}
 
-        <div id="ihe2rj" class="gjs-grid-column"><img src="assets/tkjvwdqpias_hd.jpg" id="ibbn1z"/>
-          <h1 id="inxhgi" class="gjs-heading">Гелевые типсы</h1>
-          <div id="ih3nc4" class="text-main-content">Новый тренд — наращивание на гелевые типсы. Это очень быстро! Как
-            правильно сделать коррекцию на гелевые типсы покажу в этом видео весь процесс на себе. Сделаем растяжку
-            омбре.<br/>
-					</div><a id="il82wi" class="gjs-button">Приступить к уроку</a>
-        </div>
+				{% if threes.2 != None %}
+				<div id="irkfhs" class="gjs-grid-column">
+					<img id="inygck" src="/uti_puti/static/images/previews/{{ threes.2.pic_name }}.jpg"/>
+					<h1 id="iy0tlu" class="gjs-heading">{{ threes.2.name }}</h1>
+					<div id="i3fs2t" class="text-main-content">{{ threes.2.desc }}<br/>
+					</div><a id="ipy5y9" class="gjs-button" href="{{ threes.2.id }}">Приступить к уроку</a>
+				</div>
+				{% endif %}
+				{% if threes.2 == None %}
+				<div id="isf9rf" class="gjs-grid-column"></div>
+				{% endif %}
 
-      </div>
-
-      <div id="i5dv0k" class="gjs-grid-row">
-
-        <div id="i7fm0b" class="gjs-grid-column"><img src="assets/tkjvwdqpias_hd.jpg" id="iugagj"/>
-          <h1 id="i09964" class="gjs-heading">Гелевые типсы</h1>
-          <div id="ijzynw" class="text-main-content">Новый тренд — наращивание на гелевые типсы. Это очень быстро! Как
-            правильно сделать коррекцию на гелевые типсы покажу в этом видео весь процесс на себе. Сделаем растяжку
-            омбре.<br/></div><a id="iq93xc" class="gjs-button">Приступить к уроку</a>
-        </div>
-        <div id="ilj9f4" class="gjs-grid-column"></div>
-        <div id="isf9rf" class="gjs-grid-column"></div>
-
-      </div>
+			</div>
 
 			{% endfor %}
 			{% endfor %}
 
 
-    </div>
-  </div>
+		</div>
+	</div>
 
 	{% include "footer.html" %}
 
